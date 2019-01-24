@@ -17,12 +17,12 @@
 		5365E4AD1FB796B80004EFFD /* BoundingBoxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5365E4AC1FB796B80004EFFD /* BoundingBoxView.swift */; };
 		53D01D9A1FB95DCF00AEAFC6 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53D01D991FB95DB600AEAFC6 /* Accelerate.framework */; };
 		53D01DA11FB961C200AEAFC6 /* libstdc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 53D01DA01FB961C200AEAFC6 /* libstdc++.tbd */; };
+		CE19100521F94D5B007B1153 /* label_map.txt in Resources */ = {isa = PBXBuildFile; fileRef = CE19100321F94D5B007B1153 /* label_map.txt */; };
+		CE19100621F94D5B007B1153 /* frozen_inference_graph.pb in Resources */ = {isa = PBXBuildFile; fileRef = CE19100421F94D5B007B1153 /* frozen_inference_graph.pb */; };
 		CE431DA821A39F8E003AE6EB /* TensorflowUtils.mm in Sources */ = {isa = PBXBuildFile; fileRef = CE431DA221A39F8E003AE6EB /* TensorflowUtils.mm */; };
 		CE431DA921A39F8E003AE6EB /* TensorflowGraph.mm in Sources */ = {isa = PBXBuildFile; fileRef = CE431DA521A39F8E003AE6EB /* TensorflowGraph.mm */; };
 		CE431DAA21A39F8E003AE6EB /* string_int_label_map.pb.cc in Sources */ = {isa = PBXBuildFile; fileRef = CE431DA621A39F8E003AE6EB /* string_int_label_map.pb.cc */; };
 		CE431DAB21A39F8E003AE6EB /* TensorflowPrediction.m in Sources */ = {isa = PBXBuildFile; fileRef = CE431DA721A39F8E003AE6EB /* TensorflowPrediction.m */; };
-		CE82D1BE21AFDEB200F7E2AB /* stamp_label_map.txt in Resources */ = {isa = PBXBuildFile; fileRef = CE82D1BD21AFDEB200F7E2AB /* stamp_label_map.txt */; };
-		CEA1230121B4CBAD00B04426 /* stamp_frozen_inference_graph_14683.pb in Resources */ = {isa = PBXBuildFile; fileRef = CEA1230021B4CBAD00B04426 /* stamp_frozen_inference_graph_14683.pb */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +41,8 @@
 		53D01D991FB95DB600AEAFC6 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
 		53D01D9E1FB961A800AEAFC6 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
 		53D01DA01FB961C200AEAFC6 /* libstdc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.tbd"; path = "usr/lib/libstdc++.tbd"; sourceTree = SDKROOT; };
+		CE19100321F94D5B007B1153 /* label_map.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = label_map.txt; sourceTree = "<group>"; };
+		CE19100421F94D5B007B1153 /* frozen_inference_graph.pb */ = {isa = PBXFileReference; lastKnownFileType = file; path = frozen_inference_graph.pb; sourceTree = "<group>"; };
 		CE431D9F21A39F8E003AE6EB /* TensorflowGraph.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TensorflowGraph.h; sourceTree = "<group>"; };
 		CE431DA021A39F8E003AE6EB /* string_int_label_map.pb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = string_int_label_map.pb.h; sourceTree = "<group>"; };
 		CE431DA121A39F8E003AE6EB /* TensorflowPrediction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TensorflowPrediction.h; sourceTree = "<group>"; };
@@ -50,8 +52,6 @@
 		CE431DA521A39F8E003AE6EB /* TensorflowGraph.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = TensorflowGraph.mm; sourceTree = "<group>"; };
 		CE431DA621A39F8E003AE6EB /* string_int_label_map.pb.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = string_int_label_map.pb.cc; sourceTree = "<group>"; };
 		CE431DA721A39F8E003AE6EB /* TensorflowPrediction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TensorflowPrediction.m; sourceTree = "<group>"; };
-		CE82D1BD21AFDEB200F7E2AB /* stamp_label_map.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = stamp_label_map.txt; sourceTree = "<group>"; };
-		CEA1230021B4CBAD00B04426 /* stamp_frozen_inference_graph_14683.pb */ = {isa = PBXFileReference; lastKnownFileType = file; path = stamp_frozen_inference_graph_14683.pb; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,7 +131,7 @@
 		53A04B5D20CB144300C7DD4B /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				CE82D1B821AFDE6400F7E2AB /* ssd_stamp_model */,
+				CE19100221F94D5B007B1153 /* ssd_model */,
 			);
 			name = Models;
 			path = ../Models;
@@ -145,6 +145,15 @@
 				53D01D991FB95DB600AEAFC6 /* Accelerate.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CE19100221F94D5B007B1153 /* ssd_model */ = {
+			isa = PBXGroup;
+			children = (
+				CE19100321F94D5B007B1153 /* label_map.txt */,
+				CE19100421F94D5B007B1153 /* frozen_inference_graph.pb */,
+			);
+			path = ssd_model;
 			sourceTree = "<group>";
 		};
 		CE431D9E21A39F8E003AE6EB /* Tensorflow */ = {
@@ -161,15 +170,6 @@
 				CE431DA721A39F8E003AE6EB /* TensorflowPrediction.m */,
 			);
 			path = Tensorflow;
-			sourceTree = "<group>";
-		};
-		CE82D1B821AFDE6400F7E2AB /* ssd_stamp_model */ = {
-			isa = PBXGroup;
-			children = (
-				CEA1230021B4CBAD00B04426 /* stamp_frozen_inference_graph_14683.pb */,
-				CE82D1BD21AFDEB200F7E2AB /* stamp_label_map.txt */,
-			);
-			path = ssd_stamp_model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,9 +233,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE19100521F94D5B007B1153 /* label_map.txt in Resources */,
+				CE19100621F94D5B007B1153 /* frozen_inference_graph.pb in Resources */,
 				5365E49E1FB762BE0004EFFD /* Assets.xcassets in Resources */,
-				CE82D1BE21AFDEB200F7E2AB /* stamp_label_map.txt in Resources */,
-				CEA1230121B4CBAD00B04426 /* stamp_frozen_inference_graph_14683.pb in Resources */,
 				5365E4A01FB762BE0004EFFD /* Main.storyboard in Resources */,
 				5365E49F1FB762BE0004EFFD /* LaunchScreen.storyboard in Resources */,
 			);
