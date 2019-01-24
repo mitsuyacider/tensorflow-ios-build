@@ -1,0 +1,15 @@
+item {
+  id: 1
+  name: 'tent'
+  display_name: 'tent'
+}
+item {
+  id: 2
+  name: 'build'
+  display_name: 'build'
+}
+item {
+  id: 3
+  name: 'house'
+  display_name: 'house'
+}
